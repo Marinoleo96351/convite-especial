@@ -18,7 +18,7 @@ function abrirConvite() {
 function responder(sim) {
     const resposta = document.getElementById('resposta');
     resposta.textContent = sim
-      ? "💖 Mal posso esperar para comemorar com você, meu amor! TMJ preta"
+      ? "💖 Mal posso esperar para comemorar com você, meu amor! "
       : "😔 Entendo, mas sentirei muito sua falta...";
 }
   
