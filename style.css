@@ -1,0 +1,198 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background: linear-gradient(to top right, #ffe4e1, #ffc0cb);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.container {
+  text-align: center;
+  position: relative;
+  z-index: 1;
+}
+
+.welcome, .convite {
+  background-color: white;
+  padding: 30px;
+  border-radius: 20px;
+  box-shadow: 0 0 20px rgba(0,0,0,0.2);
+  max-width: 400px;
+  transition: all 0.4s ease;
+}
+
+.hidden {
+  display: none;
+}
+
+button {
+  background-color: #ff69b4;
+  color: white;
+  border: none;
+  padding: 12px 24px;
+  border-radius: 30px;
+  font-size: 16px;
+  margin: 10px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+button:hover {
+  background-color: #e7549f;
+}
+
+.resposta {
+  font-weight: bold;
+  font-size: 18px;
+  margin-top: 20px;
+  color: #b22222;
+}
+
+.pergunta {
+  margin-top: 20px;
+  font-size: 18px;
+}
+
+.botoes {
+  margin-top: 10px;
+}
+
+.contador {
+  margin: 20px 0;
+  font-size: 18px;
+  font-weight: bold;
+  background: #fff0f5;
+  color: #c71585;
+  padding: 10px;
+  border-radius: 10px;
+  display: inline-block;
+  box-shadow: 0 0 5px rgba(0,0,0,0.1);
+}
+
+#musicToggle {
+  background-color: #9370db;
+}
+
+#musicToggle:hover {
+  background-color: #7b68ee;
+}
+
+/* Balões */
+.baloes {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  z-index: 0;
+}
+
+.balao {
+  position: absolute;
+  bottom: -150px;
+  width: 40px;
+  height: 60px;
+  background-color: hsl(calc(360 * var(--hue)), 70%, 70%);
+  border-radius: 50% 50% 45% 45%;
+  animation: subir 10s linear infinite;
+  opacity: 0.8;
+}
+
+.balao::after {
+  content: "";
+  position: absolute;
+  bottom: -10px;
+  left: 50%;
+  width: 2px;
+  height: 20px;
+  background: #555;
+  transform: translateX(-50%);
+}
+
+/* Balões individuais com diferentes posições e cores */
+.balao:nth-child(1) { left: 10%; animation-delay: 0s; --hue: 0.1; }
+.balao:nth-child(2) { left: 25%; animation-delay: 2s; --hue: 0.3; }
+.balao:nth-child(3) { left: 40%; animation-delay: 4s; --hue: 0.5; }
+.balao:nth-child(4) { left: 60%; animation-delay: 1s; --hue: 0.7; }
+.balao:nth-child(5) { left: 75%; animation-delay: 3s; --hue: 0.9; }
+.balao:nth-child(6) { left: 90%; animation-delay: 5s; --hue: 0.2; }
+
+/* Animação dos balões subindo */
+@keyframes subir {
+  0% {
+    transform: translateY(0);
+    opacity: 0.8;
+  }
+  100% {
+    transform: translateY(-110vh);
+    opacity: 0;
+  }
+}
+
+/* Botão "não" fujão */
+#nao {
+  position: relative;
+  transition: all 0.3s ease;
+}
+
+/* Ajustes para dispositivos móveis */
+@media (max-width: 768px) {
+  .container {
+    padding: 20px;
+  }
+
+  .welcome, .convite {
+    padding: 20px;
+    max-width: 90%;
+  }
+
+  .contador {
+    font-size: 16px;
+    margin: 10px 0;
+  }
+
+  button {
+    font-size: 14px;
+    padding: 10px 20px;
+  }
+
+  .baloes {
+    display: none; /* Esconde os balões em telas pequenas para melhorar a performance */
+  }
+
+  /* Ajusta o botão de música para caber melhor na tela */
+  #musicToggle {
+    font-size: 14px;
+    padding: 10px 20px;
+  }
+}
+
+/* Ajustes para telas menores que 480px */
+@media (max-width: 480px) {
+  .container {
+    padding: 10px;
+  }
+
+  .welcome, .convite {
+    padding: 15px;
+    max-width: 95%;
+  }
+
+  button {
+    font-size: 12px;
+    padding: 8px 16px;
+  }
+
+  .contador {
+    font-size: 14px;
+    margin: 10px 0;
+  }
+
+  #musicToggle {
+    font-size: 12px;
+    padding: 8px 16px;
+  }
+}
