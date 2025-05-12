@@ -33,6 +33,3 @@ Este projeto cria uma experiência interativa divertida para o usuário, onde m�
     ```
 - **Alterar o estilo dos botões**: Modifique o estilo dos botões no CSS para adaptá-los ao seu design preferido.
 - **Cor do fundo e dos botões**: As cores do fundo e dos botões podem ser personalizadas nas propriedades CSS correspondentes.
-
-## Licença
-Este projeto está sob a licença MIT. Veja o arquivo [LICENSE](LICENSE) para mais informações.
