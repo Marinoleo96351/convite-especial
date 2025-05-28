@@ -7,7 +7,7 @@
   <link rel="stylesheet" href="style.css"/>
 </head>
 <body>
-  <!-- Balões animados -->
+ 
   <div class="baloes">
     <div class="balao"></div>
     <div class="balao"></div>
@@ -17,26 +17,24 @@
     <div class="balao"></div>
   </div>
 
-  <!-- Música de fundo -->
+
   <audio id="bgMusic" loop>
     <source src="love-romantic-hopeful-music-333017.mp3" type="audio/mpeg" />
   </audio>
 
-  <!-- Container principal -->
   <div class="container">
 
-    <!-- Tela de boas-vindas -->
+  
     <div class="welcome" id="welcome">
       <h1>💌 Um convite especial só para você 💌</h1>
       <button onclick="abrirConvite()">Abrir 💖</button>
     </div>
 
-    <!-- Conteúdo do convite -->
+
     <div class="convite hidden" id="convite">
       <h2>🎂 Meu amor, Quer vir Pro meu aniversário ! 🎂</h2>
       <p>Eu quero muito comemorar meu aniversário ao seu lado, que é a pessoa mais especial da minha vida.</p>
 
-      <!-- Contador regressivo -->
       <div class="contador">
         ⏳ Faltam <span id="dias">0</span>d
         <span id="horas">00</span>h
@@ -44,29 +42,26 @@
         <span id="segundos">00</span>s pra estarmos juntinhos!
       </div>
 
-      <!-- Informações da festa -->
       <ul>
         <li><strong>📅 Data:</strong> 17 de Maio de 2025</li>
         <li><strong>🕒 Horário:</strong> 19h00</li>
         <li><strong>📍 Onde:</strong> Naquele nosso lugar especial ❤️ </li>
       </ul>
 
-      <!-- Pergunta de confirmação -->
       <p class="pergunta">Você vai vir comemorar comigo?</p>
       <div class="botoes">
         <button onclick="responder(true)">Sim, meu amor 💕</button>
         <button id="nao" onclick="responder(false)">Não vou conseguir 😢</button>
       </div>
 
-      <!-- Resposta -->
       <p id="resposta" class="resposta"></p>
 
-      <!-- Controle de música -->
+    
       <button id="musicToggle" onclick="toggleMusic()">🎵 Tocar Música</button>
     </div>
   </div>
 
-  <!-- JavaScript -->
+
   <script src="script.js"></script>
 </body>
 </html>
