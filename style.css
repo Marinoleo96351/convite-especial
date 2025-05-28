@@ -81,7 +81,7 @@ button:hover {
   background-color: #7b68ee;
 }
 
-/* Balões */
+
 .baloes {
   position: fixed;
   width: 100%;
@@ -112,7 +112,6 @@ button:hover {
   transform: translateX(-50%);
 }
 
-/* Balões individuais com diferentes posições e cores */
 .balao:nth-child(1) { left: 10%; animation-delay: 0s; --hue: 0.1; }
 .balao:nth-child(2) { left: 25%; animation-delay: 2s; --hue: 0.3; }
 .balao:nth-child(3) { left: 40%; animation-delay: 4s; --hue: 0.5; }
@@ -120,7 +119,6 @@ button:hover {
 .balao:nth-child(5) { left: 75%; animation-delay: 3s; --hue: 0.9; }
 .balao:nth-child(6) { left: 90%; animation-delay: 5s; --hue: 0.2; }
 
-/* Animação dos balões subindo */
 @keyframes subir {
   0% {
     transform: translateY(0);
@@ -132,13 +130,12 @@ button:hover {
   }
 }
 
-/* Botão "não" fujão */
 #nao {
   position: relative;
   transition: all 0.3s ease;
 }
 
-/* Ajustes para dispositivos móveis */
+
 @media (max-width: 768px) {
   .container {
     padding: 20px;
@@ -160,17 +157,17 @@ button:hover {
   }
 
   .baloes {
-    display: none; /* Esconde os balões em telas pequenas para melhorar a performance */
+    display: none; 
   }
 
-  /* Ajusta o botão de música para caber melhor na tela */
+
   #musicToggle {
     font-size: 14px;
     padding: 10px 20px;
   }
 }
 
-/* Ajustes para telas menores que 480px */
+/
 @media (max-width: 480px) {
   .container {
     padding: 10px;
