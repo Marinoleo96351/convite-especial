@@ -1,10 +1,10 @@
 function abrirConvite() {
-    // Obter os elementos uma vez e reutilizar as referências
+  
     const welcome = document.getElementById('welcome');
     const convite = document.getElementById('convite');
     const music = document.getElementById('bgMusic');
   
-    // Esconde a tela de boas-vindas e mostra o convite
+  
     welcome.classList.add('hidden');
     convite.classList.remove('hidden');
   
@@ -83,7 +83,7 @@ btnNao.addEventListener('mouseover', () => {
 
     fugas++;
 
-    // Alterar o texto quando o limite de fugas for alcançado
+
     if (fugas === maxFugas) {
         btnNao.innerText = "Ok, parei 😅";
     }
