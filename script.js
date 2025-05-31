@@ -8,7 +8,7 @@ function abrirConvite() {
     welcome.classList.add('hidden');
     convite.classList.remove('hidden');
   
-    // Reproduzir a música de fundo
+   
     music.volume = 0.5;
     music.play().catch(() => {
       console.log("Reprodução automática bloqueada.");
