@@ -24,7 +24,7 @@ Este projeto cria uma experiência interativa divertida para o usuário, onde m�
     ```bash
     git clone https://github.com/seu-usuario/fuga-botao.git
     ```
-2. **Abra o arquivo `index.html` no seu navegador** para visualizar o funcionamento do projeto.
+2. **Abra o arquivo `index.html` no seu navegador** para visualizar o funcionamento do projeto!
 
 ## Personalização
 - **Alterar o número de fugas**: Para modificar o número de botões e fugas, edite a variável `maxFugas` no arquivo JavaScript.
