@@ -44,7 +44,7 @@ function atualizarContador() {
   
     if (tempoRestante <= 0) {
       document.querySelector(".contador").textContent = "🎉 Já chegou a hora!";
-      clearInterval(intervalo); // Parar o contador quando a festa chegar
+      clearInterval(intervalo); 
       return;
     }
   
