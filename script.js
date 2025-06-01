@@ -60,8 +60,7 @@ function atualizarContador() {
 }
   
 const intervalo = setInterval(atualizarContador, 1000);
-  
-// Fuga do botão 
+
 let fugas = 0;
 const maxFugas = 10;
 const btnNao = document.getElementById('nao');
