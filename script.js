@@ -67,8 +67,7 @@ const btnNao = document.getElementById('nao');
 
 btnNao.addEventListener('mouseover', () => {
     if (fugas >= maxFugas) return;
-
-    // Calcular a 
+  
     const maxX = window.innerWidth - btnNao.offsetWidth - 20;
     const maxY = window.innerHeight - btnNao.offsetHeight - 20;
 
