@@ -74,7 +74,6 @@ btnNao.addEventListener('mouseover', () => {
     const randomX = Math.floor(Math.random() * maxX);
     const randomY = Math.floor(Math.random() * maxY);
 
-    // Mover o botão
     btnNao.style.position = 'absolute';
     btnNao.style.left = `${randomX}px`;
     btnNao.style.top = `${randomY}px`;
