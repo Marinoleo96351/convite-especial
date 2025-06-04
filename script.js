@@ -35,7 +35,7 @@ function toggleMusic() {
     }
 }
   
-
+//constante da data
 const dataFesta = new Date("2025-05-17T19:00:00");
 
 function atualizarContador() {
